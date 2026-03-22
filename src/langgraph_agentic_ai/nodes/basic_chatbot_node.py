@@ -1,6 +1,5 @@
 from src.langgraph_agentic_ai.state.state import State
 
-
 class BasicChatbotNode:
     """
     Basic Chatbot login implementation
@@ -12,5 +11,5 @@ class BasicChatbotNode:
         """
         Processes the input state and generates a chatbot response.
         """
-        
         return {"messages":self.llm.invoke(state['messages'])}
+
